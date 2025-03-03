@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to the Educational Platform</h1>
+        <p>Learn and grow with our interactive courses and resources.</p>
+        <a href="#courses" class="btn">Explore Courses</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Introduction to HTML</h3>
+                <p>Learn the basics of web development using HTML.</p>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="course">
+                <h3>CSS for Beginners</h3>
+                <p>Understand the styling of websites with CSS.</p>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="course">
+                <h3>JavaScript Essentials</h3>
+                <p>Get started with programming using JavaScript.</p>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <h2>Educational Resources</h2>
+        <ul>
+            <li><a href="#">E-book: Web Development for Beginners</a></li>
+            <li><a href="#">Interactive Quiz: HTML Basics</a></li>
+            <li><a href="#">Video Tutorial: CSS Layouts</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formFeedback"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Educational Platform | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
